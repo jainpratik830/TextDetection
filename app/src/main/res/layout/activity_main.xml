@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/button_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan with Camera"
+            android:layout_weight="1"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/button_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Import From Gallery"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText_detectedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:text="Scanned Text"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/button_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Google"
+        android:visibility="gone"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/button_youtube"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Youtube"
+        android:visibility="gone"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/button_shopping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shopping"
+        android:visibility="gone"
+        android:layout_margin="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/button_newImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Take a new Picture"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            android:textAllCaps="true"/>
+    </LinearLayout>
+
+</LinearLayout>
